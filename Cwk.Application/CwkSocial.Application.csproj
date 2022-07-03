@@ -6,4 +6,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Post\CommandHandlers\" />
+    <Folder Include="Post\Commands\" />
+    <Folder Include="Post\QueryHandlers\" />
+    <Folder Include="Post\Queries\" />
+    <Folder Include="UserProfiles\QueryHandlers\" />
+    <Folder Include="UserProfiles\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cwk.Domain\Cwk.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
