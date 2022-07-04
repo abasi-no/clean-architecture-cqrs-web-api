@@ -1,6 +1,8 @@
-﻿namespace CwkSocial.Api.Contracts.UserProfiles.Requests
+﻿using CwkSocial.Api.Contracts.UserProfiles.Responses;
+
+namespace CwkSocial.Api.Contracts.UserProfiles.Requests
 {
-    public record BasicInformation
+    public record UserProfileResponse
     {
         public Guid UserProfileId { get;  set; }
         public BasicInformation BasicInfo { get;  set; }
